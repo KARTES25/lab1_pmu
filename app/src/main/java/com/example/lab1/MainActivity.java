@@ -11,7 +11,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-
+    /**
+     * Finds maximal value of given ones.
+     * @param vals - list of given values.
+     * @return maximal value.
+     */
     public static int max(int ... vals) {
         int max = vals[0];
         for (int i : vals) {
@@ -20,7 +24,11 @@ public class MainActivity extends AppCompatActivity {
         }
         return max;
     }
-
+    /**
+     * Finds minimal value of given ones.
+     * @param vals - list of given values.
+     * @return minimal value.
+     */
     public static int min(int ... vals) {
         int min = vals[0];
         for (int i : vals) {
